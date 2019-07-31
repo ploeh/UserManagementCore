@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Product>UserManagement.UnitTests</Product>
+    <Title>UserManagement.UnitTests</Title>
+    <Copyright>Copyright © Mark Seemann 2018</Copyright>
+    <RootNamespace>Ploeh.Samples.UserManagement.UnitTests</RootNamespace>
+    <AssemblyName>Ploeh.Samples.UserManagement.UnitTests</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofixture" Version="4.11.0" />
+    <PackageReference Include="Autofixture.Xunit2" Version="4.11.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UserManagement\UserManagement.csproj" />
+  </ItemGroup>
+
+</Project>
