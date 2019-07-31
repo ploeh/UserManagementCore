@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Copyright>Copyright © Mark Seemann 2018</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="UserManagementModel.fs" />
+  </ItemGroup>
+
+</Project>
