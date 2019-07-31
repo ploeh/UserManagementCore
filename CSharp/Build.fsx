@@ -11,5 +11,14 @@ Target.create "Build" <| fun _ ->
     "UserManagement.sln"
     |> DotNet.build id
 
+Target.create "Test" <| fun _ ->
+    "UserManagement.sln"
+    |> DotNet.test id
+
+// Dependencies
+open Fake.Core.TargetOperators
+"Build"
+==> "Test"
+
 // start build
-Target.runOrDefault "Build"
+Target.runOrDefault "Test"
